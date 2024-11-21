@@ -6,13 +6,13 @@ namespace Tyuiu.ShaldinDA.Sprint3.Task0.V6.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double product = 1;
+            double product = 1.0;
             for (int k = startValue; k <= stopValue; k++)
             {
                 double term = 1 / Math.Pow(Math.Cos(5) + 1, 2);
                 product *= term;
             }
-            return product;
+            return Math.Round(product, 3);
         }
     }
 }
